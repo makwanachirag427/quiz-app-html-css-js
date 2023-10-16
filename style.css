@@ -17,39 +17,19 @@ body {
   background-color: #ced6e0;
 }
 
-.start {
-  padding: 0.5rem 2.5rem;
-  font-size: 1.8rem;
-  font-weight: bold;
-  border: 0.01rem solid rgb(0, 0, 0);
-  border-radius: 0.3rem;
-  box-shadow: 0.15rem 0.15rem rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.1);
-
-  font-family: "Poppins", sans-serif;
-  cursor: pointer;
-}
-.start a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
-.start:hover {
-  box-shadow: unset;
-  border: 0.2rem solid rgb(0, 0, 0);
-}
-
 .quiz-container {
   display: flex;
   flex-direction: column;
-  height: fit-content;
+  justify-content: center;
+  height:fit-content;
   min-width: 35rem;
+  max-width: 35rem;
   padding: 0rem 2rem;
   border-radius: 2rem;
   background-color: #00000018;
   border: 0.1rem solid rgb(255, 255, 255);
   box-shadow: 0.1rem 0.1rem rgb(0, 0, 0);
-  position: relative;
+  padding-bottom: 1rem;
 }
 
 h1 {
@@ -79,18 +59,36 @@ h1 {
 }
 
 .option {
-  height: 3rem;
+  height: fit-content;
   outline: none;
   width: 100%;
   margin: 0.4rem 0;
   border: 0.12rem solid white;
   border-radius: 0.5rem;
+  letter-spacing: 0.03rem;
   background-color: transparent;
   font-size: 1.45rem;
   font-weight: 500;
   text-align: left;
+  line-height: 2.2rem;
+  padding-block:0.5rem;
   padding-inline-start: 1rem;
   color: rgb(3, 32, 3);
+}
+.option:hover:not([disabled]) {
+  
+  border: 0.12rem solid white;
+  border-radius: 0.5rem;
+  background-color:rgba(17, 9, 9, 0.87);
+  font-size: 1.35rem;
+  font-weight: 50;
+  text-align: left;
+  padding-inline-start: 1rem;
+  color: rgb(231, 227, 227);
+  
+}
+.option:disabled{
+  cursor:no-drop;
 }
 
 .next {
@@ -100,8 +98,8 @@ h1 {
   margin-bottom: 1.5rem;
   max-width: 6rem;
   text-align: center;
-  padding: 0.5rem 1.5rem;
-  align-self: flex-end;
+  align-self: center;
+  padding: 0.5rem 0.9rem;
   border: 0.125rem solid rgb(44, 43, 43);
   color: rgb(0, 0, 0);
   box-shadow: 0.15rem 0.15rem rgb(0, 0, 0);
@@ -119,46 +117,9 @@ h1 {
   border: 0.125rem solid red;
 }
 
-.result-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  height: fit-content;
-  width: fit-content;
-  padding: 2rem 1rem;
-  border-radius: 2rem;
-  background-color: #00000018;
-  border: 0.1rem solid rgb(255, 255, 255);
-  box-shadow: 0.1rem 0.1rem rgb(0, 0, 0);
-  position: relative;
-}
 
-.checked {
-  width: 7rem;
-  border: 0.25rem solid whitesmoke;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
 .result {
   font-size: 2rem;
   text-align: center;
   color: rgb(3, 95, 3);
-}
-.restart {
-  margin-top: 5rem;
-  padding: 0.5rem 2.5rem;
-  font-size: 1.8rem;
-  font-weight: bold;
-  border: 0.01rem solid rgb(0, 0, 0);
-  border-radius: 0.3rem;
-  box-shadow: 0.15rem 0.15rem rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.1);
-  color: rgb(0, 0, 0);
-  font-family: "Poppins", sans-serif;
-  cursor: pointer;
-}
-.restart a{
-  text-decoration: none;
-  color:rgba(0, 0, 0)
 }
