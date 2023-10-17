@@ -1,5 +1,4 @@
 # Quiz App
-
 This is a simple quiz application built using HTML, CSS, and JavaScript.
 
 ## Features
